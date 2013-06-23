@@ -46,15 +46,11 @@ function startStatusCheck(statusJQuery) {
     success: function(data) {
       if ( data.status == "online" ) {
         statusJQuery("#online").show();
-        console.log("[HOST CHECK] donations.sigimera.xy: " + getCookie(["_SIGSES"]));
       }
       document.cookie = data.cookie;
     },
     error: function(xhr, text, exception) {
       statusJQuery("#offline").show();
-      console.log("XHR:    " + xhr);
-      console.log("Status: " + text);
-      console.log("Error:  " + exception);
     }
   });
 }
