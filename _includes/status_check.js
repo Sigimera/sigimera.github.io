@@ -43,14 +43,20 @@ function startStatusCheck(statusJQuery) {
     url : url_to_send,
     type : "GET",
     dataType: "jsonp",
+    cache: false,
+    timeout: 8000,
     success: function(data) {
       if ( data.status == "online" ) {
         statusJQuery("#online").show();
+        statusJQuery("#loading").hide();
+      } else {
+        /* TODO: Show here some error message */
       }
       document.cookie = data.cookie;
     },
     error: function(xhr, text, exception) {
       statusJQuery("#offline").show();
+      statusJQuery("#loading").hide();
     }
   });
 }
