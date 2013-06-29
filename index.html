@@ -4,13 +4,17 @@ title: Sigimera &mdash; Overview
 ---
 
 <div class="container">
-  {% include loading.html %}
-  {% include online.html %}
-  {% include offline.html %}
+  <div class="row-fluid">
+  <div class="well span8 offset2">
+    {% include loading.html %}
+    {% include online.html %}
+    {% include offline.html %}
 
-  <script type="text/javascript">
-    {% include status_check.js %}
-  </script>
+    <script type="text/javascript">
+      {% include status_check.js %}
+    </script>
+  </div>
+  </div>
 
   <hr/>
   <div id="home">
