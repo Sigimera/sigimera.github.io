@@ -17,7 +17,13 @@ title: Sigimera &mdash; Overview
     <h3 class="muted">Announcements</h3>
     <ul class="posts">
       {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date_to_string }}</span> &raquo;
+        <strong>{{post.title}}</strong>
+        &mdash; <a href="{{ post.url }}"><i class="icon-link muted"></i></a><br/>
+        <p style="text-align: justify">
+          <em>{{ post.content | prettyprint }} </em>
+        </p>
+      </li>
       {% endfor %}
     </ul>
   </div>
