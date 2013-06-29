@@ -1,3 +1,8 @@
 name: Sigimera Status
 safe: true
 pygments: true
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
