@@ -5,15 +5,15 @@ title: Sigimera &mdash; Overview
 
 <div class="container">
   <div class="row-fluid">
-  <div class="well span8 offset2">
-    {% include loading.html %}
-    {% include online.html %}
-    {% include offline.html %}
+    <div class="well span8 offset2">
+      {% include loading.html %}
+      {% include online.html %}
+      {% include offline.html %}
 
-    <script type="text/javascript">
-      {% include status_check.js %}
-    </script>
-  </div>
+      <script type="text/javascript">
+        {% include status_check.js %}
+      </script>
+    </div>
   </div>
 
   <hr/>
@@ -25,8 +25,9 @@ title: Sigimera &mdash; Overview
         <strong>{{post.title}}</strong>
         &mdash; <a href="{{ post.url }}"><i class="icon-link muted"></i></a><br/>
         <p style="text-align: justify">
-          <small><em>{{ post.content | prettyprint }} </em></small>
+          <small><em>{{ post.content }} </em></small>
         </p>
+        <span><a href="{{ post.url }}" style="color: #aaa"><i class="icon-comment"></i> Write a comment...</a></span>
       </li>
       {% endfor %}
     </ul>

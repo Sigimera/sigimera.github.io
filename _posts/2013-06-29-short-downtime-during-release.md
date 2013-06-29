@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Short downtime on the 30. June 2013
+comments: true
 ---
 
 On the 30. June 2013 we are expecting a short downtime of the [Donation
