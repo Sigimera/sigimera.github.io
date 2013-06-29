@@ -1,4 +1,26 @@
 ---
-layout: main
+layout: default
+title: Sigimera &mdash; Overview
 ---
+
+<div class="container">
+  {% include loading.html %}
+  {% include online.html %}
+  {% include offline.html %}
+
+  <script type="text/javascript">
+    {% include status_check.js %}
+  </script>
+
+  <hr/>
+  <div id="home">
+    <h3 class="muted">Announcements</h3>
+    <ul class="posts">
+      {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>
 

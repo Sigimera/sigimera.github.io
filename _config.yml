@@ -1,4 +1,2 @@
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
+name: Sigimera Status
+pygments: true

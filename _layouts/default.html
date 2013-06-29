@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="site">
+        <div class="header">
+          <h1 class="title">{{ site.name }}</h1>
+          <a class="extra" href="/">Home</a>
+        </div>
+
+        {{ content }}
+
+        <div class="footer row-fluid">
+          <div class="contact span5">
+            <p>
+              Sigimera Ltd.<br />
+              Company No. 08409233<br />
+              <a href="mailto:support@sigimera.org">support@sigimera.org</a>
+            </p>
+          </div>
+          <div class="contact span6" style="text-align: right">
+            <p>
+              <a href="http://twitter.com/Sigimera"><i class="icon-twitter"></i> twitter.com/Sigimera</a><br />
+              <a href="http://github.com/Sigimera"><i class="icon-github"></i> github.com/Sigimera</a><br />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+  </body>
+</html>
