@@ -14,7 +14,7 @@
           <name>Sigimera Team</name>
           <email>support@sigimera.org</email>
         </author>
-        <link href="{{ post.actual_url }}"/>
+        <link href="http://status.sigimera.org{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <id>http://status.sigimera.org{{ post.url }}</id>
         <content type="html">{{ post.content | strip_html | truncate: 300 | xml_escape }}</content>
