@@ -28,10 +28,6 @@ if ( window.jQuery ) {
   });
 }
 
-/**
- * This function is responsible for the widget loading. It fetches the right
- * organization and all related settings, e.g. the right submit button.
- */
 function startStatusCheck(statusJQuery) {
   SIG_CORE_URL = "https://donations.sigimera.org";
   var url_to_send = SIG_CORE_URL + "/status.json?client_uuid=" + getCookie(["_SIGSES"]) + "&callback=?";
