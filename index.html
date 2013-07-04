@@ -3,7 +3,7 @@ layout: default
 title: Sigimera &mdash; Overview
 ---
 
-<div class="container">
+<div class="container-fluid">
   <div class="row-fluid">
     <div class="span7">
       {% include loading.html %}
@@ -37,13 +37,18 @@ title: Sigimera &mdash; Overview
     </div>
     <ul class="posts">
       {% for post in paginator.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo;
+      <li>
+        <span>{{ post.date | date_to_string }}</span> &raquo;
         <strong>{{post.title}}</strong>
         &mdash; <a href="{{ post.url }}"><i class="icon-link muted"></i></a><br/>
         <p style="text-align: justify">
           <small><em>{{ post.content }} </em></small>
         </p>
-        <span><a href="{{ post.url }}" style="color: #aaa"><i class="icon-comment"></i> Write a comment...</a></span>
+        {% if post.comments %}
+          <span><a href="{{ post.url }}" style="color: #aaa"><i class="icon-comment"></i> Write a comment...</a></span>
+        {% else %}
+          <span><a href="{{ post.url }}" style="color: #aaa"><i class="icon-book"></i> Read more...</a></span>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>
