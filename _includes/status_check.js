@@ -1,6 +1,9 @@
 if ( window.jQuery ) {
   statusJQuery = jQuery.noConflict();
   statusJQuery(document).ready(function() {
+    statusJQuery("#online").hide();
+    statusJQuery("#offline").hide();
+
     startStatusCheck(statusJQuery);
   });
   /* Restore old JQuery */
