@@ -9,8 +9,6 @@ if ( window.jQuery ) {
   /* Restore old JQuery */
   jQuery.noConflict(true);
 } else {
-  statusJQuery("#online").hide();
-  statusJQuery("#offline").hide();
   // Load the script
   var script = document.createElement("script");
   script.src = 'http://code.jquery.com/jquery-1.10.0.min.js';
@@ -20,6 +18,8 @@ if ( window.jQuery ) {
   // Poll for jQuery to come into existance
   var checkReady = function(callback) {
     if (window.jQuery) {
+      jQuery("#online").hide();
+      jQuery("#offline").hide();
       callback(jQuery);
     }
     else {
