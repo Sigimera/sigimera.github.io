@@ -1,9 +1,6 @@
 if ( window.jQuery ) {
   statusJQuery = jQuery.noConflict();
   statusJQuery(document).ready(function() {
-    statusJQuery("#online").hide();
-    statusJQuery("#offline").hide();
-
     startStatusCheck(statusJQuery);
   });
   /* Restore old JQuery */
@@ -18,8 +15,6 @@ if ( window.jQuery ) {
   // Poll for jQuery to come into existance
   var checkReady = function(callback) {
     if (window.jQuery) {
-      jQuery("#online").hide();
-      jQuery("#offline").hide();
       callback(jQuery);
     }
     else {
