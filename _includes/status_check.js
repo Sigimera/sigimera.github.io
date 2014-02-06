@@ -29,7 +29,7 @@ if ( window.jQuery ) {
 }
 
 function startStatusCheck(statusJQuery) {
-  SIG_CORE_URL = "https://status.sigimera.org";
+  SIG_CORE_URL = "https://stage.sigimera.org";
   var url_to_send = SIG_CORE_URL + "/status.json?client_uuid=" + getCookie(["_SIGSES"]) + "&callback=?";
 
   statusJQuery.support.cors = true;
