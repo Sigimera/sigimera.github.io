@@ -6,4 +6,4 @@ The related javascript code will be developed further in order to detect differe
 show useful information for users. The website will be also extended to support different
 contact possiblities.
 
-(c) 2013 - 2014 Sigimera Ltd. All rights reserved.
+(c) 2013 - 2018 Sigimera Ltd. All rights reserved.
